@@ -1,0 +1,100 @@
+## Codigos e informações inseridos no Insomnia utilizados para testes e acompanhamento da aula ##
+
+Request
+
+    - Listar
+        GET 
+            localhost:3000/clients
+            
+        Preview 
+            [
+                {
+                    "id": 2,
+                    "nome": "Eduardo Soares",
+                    "telefone": "53981438103"
+                },
+                {
+                    "id": 1,
+                    "nome": "Angelo Luz",
+                    "telefone": "53999999999"
+                }
+            ];
+            
+
+
+    - Buscar
+        GET 
+            localhost:3000/2
+            
+        Preview - Status 200 OK
+            [
+                {
+                    "id": 2,
+                    "nome": "Eduardo Soares",
+                    "telefone": "53981438103"
+                }
+            ]
+
+
+
+    - Inserir
+        POST
+            localhost:3000/2
+            
+        JSON
+            {
+                "id": 10,
+                "nome": "Larissa Camargo",
+                "telefone": "53981501951"
+            }    
+
+
+        Preview - Status 200 OK
+            [
+                {
+                    "id": 2,
+                    "nome": "Eduardo Soares",
+                    "telefone": "53981438103"
+                }
+            ]
+    
+
+
+    - Atualizar
+        PUT
+            localhost:3000/clients/10
+            
+        JSON
+            {
+                "nome": "Larissa Soares"
+            }    
+
+
+        Preview - Status 200 OK
+            [
+                {
+                    "id": 10,
+                    "nome": "Larissa Soares",
+                    "telefone": "53981501951"
+                }
+            ]
+
+
+
+    - Remover
+        DELETE
+            localhost:3000/clients/10    
+
+        Preview - Status 200 OK
+            [
+                {
+                    "id": 2,
+                    "nome": "Eduardo Soares",
+                    "telefone": "53981438103"
+                },
+                {
+                    "id": 1,
+                    "nome": "Angelo Luz",
+                    "telefone": "53999999999"
+                }
+            ];    
