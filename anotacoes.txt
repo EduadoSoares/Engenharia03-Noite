@@ -1,0 +1,12 @@
+Status HTTP
+    - 2xx  / Sucess             /   200 - OK
+                                    201 - Created
+                                    204 - No content 
+
+    - 4xx  / Erro do cliente    /   400 - Bad request
+                                    403 - Forbidden
+                                    404 - Not found
+
+    -5xx   / Erro no servidor   /   500 - Internal server error
+
+
